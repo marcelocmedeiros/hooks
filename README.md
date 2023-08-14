@@ -1,3 +1,23 @@
+# Curso de React Hooks
+O curso de React Hooks faz parte da Trilha React & Next do **Especialista.dev** do Curso de **Escola de Foramação DEV**.
+
+Neste curso, irei aprender como utilizar os Hooks, uma funcionalidade do React que adiciona uma série de funcionalidades aos componentes funcionais.
+
+Os Hooks permitem que você adicione funcionalidades que antes só estavam disponíveis para componentes de classe, como o gerenciamento de estados, efeitos colaterais, contextos e muito mais. Eles também permitem que você crie componentes mais reutilizáveis e mais fáceis de testar.
+
+Neste curso, vamos conhecer os conceitos básicos dos Hooks e como utilizar os hooks mais populares do React na criação de componentes funcionais. Além de aprender a  utilizar hooks relacionados a estado, efeitos colaterais, contexto, referência, memoização e muito mais, você também aprenderá a criar os seus próprios hooks e verá a utilização desses hooks em uma aplicação mais complexa. 
+
+
+## O que você vai encontrar neste repositório
+* Como utilizar hooks
+* **Hooks básicos** - Utilização de hooks básicos como `useState`, `useEffect` e `useRef`
+* **Hooks personalizados** - Como criar hooks personalizados
+* **Aplicando Hooks** - Aplicação dos hooks vistos até o momento na interface da aplicação
+* **Contexto** - Como utilizar o hook `useContext`
+* **Aplicando Contexto** - Aplicação do hook `useContext` na interface
+* **Outros hooks** - Outros hooks do React
+
+# 🤔 Segue abaixo como o projeto foi criado caso queira baixar e rodar no seu PC 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
