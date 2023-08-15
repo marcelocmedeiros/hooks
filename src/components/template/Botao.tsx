@@ -10,6 +10,8 @@ export interface BotaoProps {
 
 export default function Botao(props: BotaoProps) {
 
+    console.log("Renderizei");
+    
     function tamanho() {
         if (props.tamanho === "xs") return 9;
         if (props.tamanho === "lg") return 14;

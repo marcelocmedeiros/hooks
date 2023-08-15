@@ -1,4 +1,4 @@
-import { IconArrowsLeftRight, IconMenu, IconNumbers, IconUsers, IconX } from "@tabler/icons";
+import { IconArrowsLeftRight, IconLetterCase, IconMathGreater, IconMenu, IconNumbers, IconRefreshAlert, IconSection,  IconUsers, } from "@tabler/icons";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
@@ -15,7 +15,11 @@ export default function MenuPrincipal() {
                 {titulo:"Contador",url:"/essenciais/contador", tag:"useState", icone: <IconNumbers/>},
                 {titulo:"Votação",url:"/essenciais/votacao", tag:"useState", icone: <IconUsers/>},
                 {titulo:"Consulta à API",url:"/essenciais/consultaAPI", tag:"useEffect", icone: <IconArrowsLeftRight/>},
-            
+                {titulo:"Maior",url:"/essenciais/maior", tag:"useEffect", icone: <IconMathGreater/>},
+                {titulo:"Contagem Caracteres",url:"/essenciais/contagemCaracteresEffect", tag:"useEffect", icone: <IconLetterCase/>},
+                {titulo:"State VS Referência",url:"/essenciais/stateVsRef", tag:"useEffect", icone: <IconRefreshAlert/>},
+                {titulo:"Referenciando Elemento",url:"/essenciais/refElemento", tag:"useEffect", icone: <IconSection/>},
+                {titulo:"Contagem Caracteres",url:"/essenciais/contagemCaracteresRef", tag:"useEffect", icone: <IconLetterCase/>},
             ],
         },
     ];
