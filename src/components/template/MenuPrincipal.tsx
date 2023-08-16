@@ -1,4 +1,4 @@
-import { IconArrowsLeftRight, IconLetterCase, IconMathGreater, IconMenu, IconNumbers, IconRefreshAlert, IconSection,  IconUsers, } from "@tabler/icons";
+import { IconAppWindow, IconArrowsLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconPassword, IconRefreshAlert, IconSection,  IconUsers, } from "@tabler/icons";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
@@ -21,6 +21,15 @@ export default function MenuPrincipal() {
                 {titulo:"Referenciando Elemento",url:"/essenciais/refElemento", tag:"useEffect", icone: <IconSection/>},
                 {titulo:"Contagem Caracteres",url:"/essenciais/contagemCaracteresRef", tag:"useEffect", icone: <IconLetterCase/>},
             ],
+        },
+        {
+            titulo: "Personalizados",
+            aberta: true,
+            itens: [
+                {titulo:"Modal",url:"/personalizados/modal", tag:"personalizados", icone: <IconAppWindow/>},
+                {titulo:"Tamanho Janela",url:"/personalizados/tamanhoJanela", tag:"personalizados", icone: <IconDimensions/>},
+                {titulo:"Validando Senha",url:"/personalizados/senha", tag:"personalizados", icone: <IconLock/>},
+            ]
         },
     ];
     const mini = false;

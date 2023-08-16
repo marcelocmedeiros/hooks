@@ -24,9 +24,9 @@ export default function Botao(props: BotaoProps) {
     return (
         <button
             className={`
-            flex items-center gap-2 rounded-md px-5 h-${tamanho()}
+            flex items-center gap-2 px-5 h-${tamanho()}
             hover:bg-opacity-80 select-none
-            ${props.redondo && `rounded-full justify-center w-${tamanho()}`}
+            ${props.redondo && `rounded-full justify-center w-${tamanho()}`} 
             ${props.cor ?? "bg-blue-500"}
             ${`text-${props.tamanho ?? "base"}`}
             ${props.className ?? ""}
