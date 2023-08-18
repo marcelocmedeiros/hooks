@@ -1,6 +1,5 @@
 import Pagina from "../../components/template/Pagina";
-// import InputFormatado from "../../components/formulario/InputFormatado";
-import InputFormatado from "../../components/template/InputFormatado";
+import InputFormatado from "../../components/formulario/InputFormatado";
 import useStateValidado from "../../data/hooks/useStateValidado";
 
 export default function(){

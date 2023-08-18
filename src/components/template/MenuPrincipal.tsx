@@ -1,10 +1,13 @@
-import { IconAppWindow, IconArrowsLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconPassword, IconRefreshAlert, IconSection,  IconUsers, } from "@tabler/icons";
+import { IconAppWindow, IconArrowsLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconPassword, IconRefreshAlert, IconSection,  IconShoppingCart,  IconUsers, IconX, } from "@tabler/icons";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
+import useTamanhoJanela from "../../data/hooks/useTamanhoJanela";
+import useBoolean from "../../data/hooks/useBoolean";
+import { useEffect } from "react";
 
 export default function MenuPrincipal() {
     const secoes = [
@@ -31,8 +34,24 @@ export default function MenuPrincipal() {
                 {titulo:"Validando Senha",url:"/personalizados/senha", tag:"personalizados", icone: <IconLock/>},
             ]
         },
+        {
+            titulo: "Personalizados",
+            aberta: true,
+            itens: [
+                {titulo:"Loja",url:"/contexto/loja", tag:"useContext", icone: <IconShoppingCart/>},
+            ]
+        },
     ];
-    const mini = false;
+
+    const [mini, toggleMini, miniTrue] = useBoolean(false);
+    let tamanho = useTamanhoJanela()
+
+    useEffect(()=>{
+        if(tamanho==="md" || tamanho==="sm"){
+            miniTrue()
+        }
+    })
+
     function renderizarSecoes() {
         return secoes.map((secao: MenuSecao) => (
             <MenuPrincipalSecao key={secao.titulo} titulo={secao.titulo} mini={mini} aberta={secao.aberta}>
@@ -66,6 +85,10 @@ export default function MenuPrincipal() {
         >
             <Flex center className="m-7">
                 {!mini && <Logo />}
+                <div className="cursor-pointer" onClick={toggleMini}>
+                    {mini ? <IconMenu/> : <IconX/>}
+                </div>
+
             </Flex>
             <nav className="flex flex-col gap-4 m-7">{renderizarSecoes()}</nav>
         </aside>

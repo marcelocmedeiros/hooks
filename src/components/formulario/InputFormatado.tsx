@@ -16,7 +16,7 @@ export default function InputFormatado(props: InputFormatadoProps) {
                 onInput={props.onInput}
                 className={`
                     text-gray-600 px-2 
-                    w-40 h-11 rounded-md
+                    w-[13rem] h-11 rounded-md
                     ${props.className ?? ''}
                 `}
             />
