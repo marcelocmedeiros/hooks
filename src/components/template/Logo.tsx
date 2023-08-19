@@ -1,6 +1,7 @@
 import { IconFishHook } from "@tabler/icons";
 import Link from "next/link";
 import Flex from "./Flex";
+import useTema from "../../data/hooks/useTema";
 
 interface LogoProps {
     subtitulo?: string;
@@ -10,13 +11,14 @@ interface LogoProps {
 }
 
 export default function Logo(props: LogoProps) {
+    const {corDestaque} = useTema();
     return (
         <Link href="/" className="cursor-pointer">
             <Flex col={props.col} centerCross className={props.className}>
                 <div
                     className={`
                     flex justify-center items-center
-                    bg-blue-500 rounded-lg 
+                    bg-${corDestaque} rounded-lg 
                     ${props.grande ? "w-[150px] h-[150px]" : "w-[50px] h-[50px]"}
                 `}
                 >
