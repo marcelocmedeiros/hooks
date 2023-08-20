@@ -1,12 +1,20 @@
+# Menu da Aplicação
+
+<p align="center">
+<img src="./imagens/hooks.png" alt="Tela incial" width="400px"></img>
+<img src="./imagens/hooks.gif" alt="Aplicação funcionando" width="423px"></img>
+</p>
+
 # Curso de React Hooks
 O curso de React Hooks faz parte da Trilha React & Next do **Especialista.dev** do Curso de **Escola de Foramação DEV**.
 
-Neste curso, irei aprender como utilizar os Hooks, uma funcionalidade do React que adiciona uma série de funcionalidades aos componentes funcionais.
+Aqui aprendemos como utilizar os Hooks, uma funcionalidade do React que adiciona uma série de funcionalidades aos componentes funcionais.
+
+Neste curso conhecemos desde os conceitos básicos dos Hooks e como utilizar os hooks mais populares do React na criação de componentes funcionais. Além de aprender a  utilizar hooks relacionados a estado, efeitos colaterais, contexto, referência, memoização e muito mais, também aprendemos a criar nossos próprios hooks. 
+
+Para visualização dos Hooks foi usado uma página onde os principais Hooks foram abordados em aula e transformados em exemplos você pode ver cada um deles no menu lateral da página clicando no símbolo "+" para abrir e navegar entre os diversos exemplos.
 
 Os Hooks permitem que você adicione funcionalidades que antes só estavam disponíveis para componentes de classe, como o gerenciamento de estados, efeitos colaterais, contextos e muito mais. Eles também permitem que você crie componentes mais reutilizáveis e mais fáceis de testar.
-
-Neste curso, vamos conhecer os conceitos básicos dos Hooks e como utilizar os hooks mais populares do React na criação de componentes funcionais. Além de aprender a  utilizar hooks relacionados a estado, efeitos colaterais, contexto, referência, memoização e muito mais, você também aprenderá a criar os seus próprios hooks e verá a utilização desses hooks em uma aplicação mais complexa. 
-
 
 ## O que você vai encontrar neste repositório
 * Como utilizar hooks

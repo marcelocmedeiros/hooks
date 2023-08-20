@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface BotaoProps {
     icone?: any;
     texto?: string;
@@ -8,7 +10,7 @@ export interface BotaoProps {
     className?: string;
 }
 
-export default function Botao(props: BotaoProps) {
+function Botao(props: BotaoProps) {
 
     console.log("Renderizei");
     
@@ -38,3 +40,5 @@ export default function Botao(props: BotaoProps) {
         </button>
     );
 }
+
+export default React.memo(Botao);

@@ -1,18 +1,17 @@
 import { IconMinus, IconPlus } from "@tabler/icons";
-import Flex from "./Flex";
 import useToggle from "../../data/hooks/useToggle";
+import Flex from "./Flex";
 
 interface MenuSecaoProps {
     titulo: string
     mini: boolean
     aberta: boolean
     children: any
-    onClick?: () => void
+    onClick?: () => void;
 }
 
 export default function MenuSecao(props: MenuSecaoProps) {
-    const { titulo, mini, aberta } = props;
-    
+    const { titulo, mini, aberta} = props;
 
     return (
         <Flex col gap={4} className={`${mini && "items-center"}`}>
